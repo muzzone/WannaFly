@@ -4,6 +4,7 @@ header{
 	height: 1155px;
 	background-position: center;
     background-repeat: no-repeat;
+    padding: 0 20px;
 
     .headerTop {
     	max-width: 1200px;
@@ -29,6 +30,7 @@ header{
     	width: 100%;
     	text-transform: uppercase;
     	margin-top: 25px;
+    	margin-bottom: 30px;
     	ul{
     		padding:0;
     		max-width: 1200px;
@@ -44,4 +46,73 @@ header{
     		}
     	}
     }
+    // menu END
+    .headerCenter{
+    	margin: auto;
+    	max-width: 1200px;
+    	display: flex;
+    	justify-content: space-between;
+    	div{
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    	}
+    	.wf{
+    		background-image: url(../img/WannaFly.png);
+    		flex-basis: 553px;
+    		height: 452px;
+    	}
+    	.hi {
+    		background-image: url(../img/hi.png);
+    		flex-basis: 335px;
+    		font-size: 46px;
+    		margin-left: -80px;
+		    span{
+		    	position: relative;
+    			left: 53px;
+		    }
+    	}
+    	.form{
+    		background-image: url(../img/formimg.png);
+    		max-width: 370px;
+    		float: right;
+    		margin-left: 5px;
+    		p {
+    			font-size: 33px;
+    			color: white;
+    			text-align: center;
+    		}
+    		p:nth-child(2){
+    			font-size: 25px;
+    		}
+    		input{
+    			display: inherit;
+    			margin: auto;
+	    		width: 75%;
+			    margin-top: 15px;
+			    padding: 10px 20px;
+			    color: #363636;
+			    font-family: Cuprum-Regular;
+			    font-size: 21px;
+			    font-weight: 400;
+			    border: 0;
+    		}
+    	}
+    }
+    // .headerCenter{
+    // 	margin: auto;
+    // 	max-width: 1200px;
+    // 	display: flex;
+    // 	.wf{
+    // 		span{
+    // 			position: absolute;
+    // 		}
+    // 	}
+    // 	div{
+    // 		img{
+    // 			width: 100%;
+    // 			height: auto;
+    // 		}
+    // 	}
+    // }
+
 }

@@ -4,6 +4,7 @@ header {
   height: 1155px;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 20px;
 }
 header .headerTop {
   max-width: 1200px;
@@ -37,6 +38,7 @@ header .menu {
   width: 100%;
   text-transform: uppercase;
   margin-top: 25px;
+  margin-bottom: 30px;
 }
 header .menu ul {
   padding: 0;
@@ -55,6 +57,63 @@ header .menu ul li {
 }
 header .menu ul li:first-child {
   padding: 0;
+}
+header .headerCenter {
+  margin: auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .headerCenter div {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .headerCenter .wf {
+  background-image: url(../img/WannaFly.png);
+  -ms-flex-preferred-size: 553px;
+      flex-basis: 553px;
+  height: 452px;
+}
+header .headerCenter .hi {
+  background-image: url(../img/hi.png);
+  -ms-flex-preferred-size: 335px;
+      flex-basis: 335px;
+  font-size: 46px;
+  margin-left: -80px;
+}
+header .headerCenter .hi span {
+  position: relative;
+  left: 53px;
+}
+header .headerCenter .form {
+  background-image: url(../img/formimg.png);
+  max-width: 370px;
+  float: right;
+  margin-left: 5px;
+}
+header .headerCenter .form p {
+  font-size: 33px;
+  color: white;
+  text-align: center;
+}
+header .headerCenter .form p:nth-child(2) {
+  font-size: 25px;
+}
+header .headerCenter .form input {
+  display: inherit;
+  margin: auto;
+  width: 75%;
+  margin-top: 15px;
+  padding: 10px 20px;
+  color: #363636;
+  font-family: Cuprum-Regular;
+  font-size: 21px;
+  font-weight: 400;
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
