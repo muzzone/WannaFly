@@ -4,15 +4,44 @@ header{
 	height: 1155px;
 	background-position: center;
     background-repeat: no-repeat;
+
     .headerTop {
-    	height: 100px;
     	max-width: 1200px;
     	display: flex;
     	margin: auto;
+    	justify-content: space-between;
+    	align-items: center;
+    	flex-wrap: wrap;
     	.tel{
     		text-transform: uppercase;
-    		padding-right: 60px;
     		text-align: center;
+    		display: flex;
+    		div{
+    			padding-right: 60px;
+    		}
+    	}
+    	.socLink{
+    		padding: 30px 0px;
+    	}
+    }
+    // headerTop END
+    .menu {
+    	width: 100%;
+    	text-transform: uppercase;
+    	margin-top: 25px;
+    	ul{
+    		padding:0;
+    		max-width: 1200px;
+    		margin: auto;
+    		display: flex;
+    		justify-content: flex-end;
+    		list-style: none;
+    		li{
+    			padding-left: 100px;
+    		}
+    		li:first-child{
+    			padding:0;
+    		}
     	}
     }
 }
