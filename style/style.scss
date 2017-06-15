@@ -1,0 +1,18 @@
+header{
+	background-image: url("../img/bimg.png");
+	width: 100%;
+	height: 1155px;
+	background-position: center;
+    background-repeat: no-repeat;
+    .headerTop {
+    	height: 100px;
+    	max-width: 1200px;
+    	display: flex;
+    	margin: auto;
+    	.tel{
+    		text-transform: uppercase;
+    		padding-right: 60px;
+    		text-align: center;
+    	}
+    }
+}
