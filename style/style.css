@@ -1,4 +1,4 @@
-p, a, span, h1, h2, h3, h4, h6 {
+p, a, span, h1, h2, h3, h4, h5, h6 {
   font-family: 'Cuprum', sans-serif;
   font-weight: 700;
 }
@@ -26,6 +26,11 @@ h3 {
 
 h4 {
   font-size: 37px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 47px;
   text-align: center;
 }
 
@@ -574,6 +579,116 @@ main {
 }
 .part3 .brands div img {
   width: 100%;
+}
+
+.part4 {
+  background-image: url(../img/part4.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.part4 p {
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+.part4 h3 {
+  text-align: center;
+  text-transform: none;
+  padding-bottom: 123px;
+}
+.part4 h3 span {
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+}
+@media screen and (min-width: 1040px) {
+  .part4 h3 br {
+    display: none;
+  }
+}
+.part4 h5 {
+  color: white;
+  padding: 200px 10px 100px 10px;
+}
+.part4 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1220px;
+  margin: auto;
+}
+.part4 .icons > div {
+  width: 16%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1130px) {
+  .part4 .icons > div {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .part4 .icons > div {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .part4 .icons > div {
+    width: 100%;
+  }
+}
+.part4 .icons > div img {
+  height: 90px;
+  margin-bottom: 50px;
+}
+
+.do {
+  background-color: white;
+  text-align: center;
+}
+.do h2 {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.do h3 {
+  font-size: 41px;
+}
+.do p {
+  font-size: 21px;
+  color: #899daf;
+}
+.do span {
+  font-size: 34px;
+}
+.do > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 874px) {
+  .do > div {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .do > div div:nth-child(2) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    width: 100%;
+  }
+}
+.do > div > div {
+  padding: 0px 50px;
+}
+@media screen and (max-width: 348px) {
+  .do > div > div {
+    padding: 10px 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

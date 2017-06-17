@@ -1,4 +1,4 @@
-p, a, span, h1, h2, h3, h4, h6{
+p, a, span, h1, h2, h3, h4, h5, h6{
 	font-family: 'Cuprum', sans-serif;
 	font-weight: 700;
 }
@@ -21,6 +21,10 @@ h3{
 }
 h4{
 	font-size: 37px;
+	text-align: center;
+}
+h5{
+	font-size: 47px;
 	text-align: center;
 }
 h6{
@@ -464,18 +468,6 @@ main {
 	h4{
 		padding: 40px 10px;
 	}
-	// .brands{
-	// 	max-width: 1200px;
-	// 	margin: auto;
-	// 	> div > div {
-	// 		height: auto;
-	// 	}
-	// 	img{
-	// 		width: 100%;
-	// 		margin-top: auto;
-	// 		margin-bottom: auto;
-	// 	}
-	// }
 	.brands{
 		display: flex;
 		flex-wrap: wrap;
@@ -495,4 +487,99 @@ main {
 			}
 		}
 	}
+}
+// part3 END
+.part4{
+	background-image: url(../img/part4.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	p{
+		font-size: 25px;
+		color: white;
+		text-transform: uppercase;
+	}
+	h3{
+		text-align: center;
+		text-transform: none;
+		padding-bottom: 123px;
+		span{
+			font-size: 30px;
+			color: white;
+			font-weight: 400;
+		}
+		br{
+			@media screen and (min-width: 1040px){
+				display: none;
+			}
+		}
+	}
+	h5{
+		color: white;
+		padding: 200px 10px 100px 10px;
+		
+	}
+	.icons{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1220px;
+		margin: auto;
+		> div{
+			width: 16%;
+			text-align: center;
+			padding-bottom: 40px;
+			@media screen and (max-width: 1130px){
+				width: 33%;
+			}
+			@media screen and (max-width: 590px){
+				width: 49%;
+			}
+			@media screen and (max-width: 420px){
+				width: 100%;
+			}
+			img{
+				height: 90px;
+				margin-bottom: 50px;
+			}
+		}
+		
+	}
+	// icons END
+}
+// part4 END
+.do{
+	background-color: white;
+	text-align: center;
+	h2{
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+	h3{
+		font-size: 41px;
+	}
+	p{
+		font-size: 21px;
+		color: #899daf;
+	}
+	span{
+		font-size: 34px;
+	}
+	> div{
+		display: flex;
+		justify-content: center;
+		@media screen and (max-width: 874px){
+			flex-wrap: wrap-reverse;
+			div:nth-child(2){
+				order: 5;
+				width: 100%
+			}
+		}
+		> div{
+			padding: 0px 50px;
+			@media screen and (max-width: 348px){
+				padding: 10px 20px;
+			}
+		}
+
+	}
+
 }
