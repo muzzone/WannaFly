@@ -438,9 +438,6 @@ main {
   color: #ef7239;
 }
 
-.part2 {
-  display: none;
-}
 .part2 .topImg {
   background-image: url(../img/part2.png);
   background-position: top;
@@ -455,6 +452,11 @@ main {
   margin-top: -100px;
   padding-bottom: 150px;
 }
+@media screen and (max-width: 410px) {
+  .part2 h2 {
+    padding-bottom: 50px;
+  }
+}
 .part2 .howWeWork {
   max-width: 1200px;
   display: -webkit-box;
@@ -465,6 +467,12 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 810px) {
+  .part2 .howWeWork {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .part2 .howWeWork > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,10 +482,56 @@ main {
       justify-content: space-around;
   text-align: center;
 }
+@media screen and (max-width: 810px) {
+  .part2 .howWeWork > div {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .part2 .howWeWork > div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .part2 .howWeWork > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+  }
+  .part2 .howWeWork > div .arrowtop {
+    display: none;
+  }
+  .part2 .howWeWork > div > div {
+    padding-bottom: 20px;
+  }
+}
 .part2 .howWeWork > div p {
   font-size: 23px;
   color: #fff;
   font-weight: 400;
+}
+@media screen and (max-width: 1130px) {
+  .part2 .howWeWork > div p {
+    font-size: 17px;
+  }
+  .part2 .howWeWork > div h6 {
+    font-size: 17px;
+  }
+}
+.part2 .howWeWork img {
+  position: absolute;
+}
+.part2 .howWeWork .arrowtop {
+  margin-top: -100px;
+}
+@media screen and (max-width: 810px) {
+  .part2 .howWeWork .arrowbtm {
+    display: none;
+  }
 }
 .part2 .btmImg {
   height: 334px;
