@@ -1,4 +1,4 @@
-p, a, span, h1, h2, h3, h6{
+p, a, span, h1, h2, h3, h4, h6{
 	font-family: 'Cuprum', sans-serif;
 	font-weight: 700;
 }
@@ -460,10 +460,39 @@ main {
 }
 // part2 END
 .part3{
-	display: none;
 	background-color: #fff;
+	h4{
+		padding: 40px 10px;
+	}
+	// .brands{
+	// 	max-width: 1200px;
+	// 	margin: auto;
+	// 	> div > div {
+	// 		height: auto;
+	// 	}
+	// 	img{
+	// 		width: 100%;
+	// 		margin-top: auto;
+	// 		margin-bottom: auto;
+	// 	}
+	// }
 	.brands{
+		display: flex;
+		flex-wrap: wrap;
 		max-width: 1200px;
 		margin: auto;
+		div{
+			display: flex;
+			align-items: center;
+			width: calc(20% - 36px);
+		    margin: 18px;
+		    @media screen and (max-width: 620px){
+		    	width: 45%;
+		    	margin: 2.5%;
+		    }
+			img{
+				width: 100%;
+			}
+		}
 	}
 }

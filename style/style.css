@@ -1,4 +1,4 @@
-p, a, span, h1, h2, h3, h6 {
+p, a, span, h1, h2, h3, h4, h6 {
   font-family: 'Cuprum', sans-serif;
   font-weight: 700;
 }
@@ -542,12 +542,38 @@ main {
 }
 
 .part3 {
-  display: none;
   background-color: #fff;
 }
+.part3 h4 {
+  padding: 40px 10px;
+}
 .part3 .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
+}
+.part3 .brands div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(20% - 36px);
+  margin: 18px;
+}
+@media screen and (max-width: 620px) {
+  .part3 .brands div {
+    width: 45%;
+    margin: 2.5%;
+  }
+}
+.part3 .brands div img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
