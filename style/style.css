@@ -26,6 +26,7 @@ h3 {
 
 h4 {
   font-size: 37px;
+  text-align: center;
 }
 
 h6 {
@@ -309,6 +310,18 @@ main {
   margin-top: auto;
   margin-bottom: auto;
 }
+@media screen and (max-width: 690px) {
+  .part1 .asd {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
+}
 .part1 div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +339,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 690px) {
+  .part1 div .price {
+    text-align: center;
+  }
 }
 .part1 div .price p {
   color: #ff8d2c;
@@ -381,6 +399,13 @@ main {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 690px) {
+  .part1 .promotion .asd {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
 .part1 .marketing > div > span {
   font-size: 36px;
   margin-top: -11px;
@@ -401,6 +426,11 @@ main {
 .attention h1 {
   color: #ef7239;
 }
+@media screen and (max-width: 400px) {
+  .attention h1 {
+    font-size: 60px;
+  }
+}
 .attention p {
   font-size: 41px;
 }
@@ -408,6 +438,9 @@ main {
   color: #ef7239;
 }
 
+.part2 {
+  display: none;
+}
 .part2 .topImg {
   background-image: url(../img/part2.png);
   background-position: top;
@@ -452,6 +485,15 @@ main {
   background-image: url(../img/part3.png);
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.part3 {
+  display: none;
+  background-color: #fff;
+}
+.part3 .brands {
+  max-width: 1200px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
