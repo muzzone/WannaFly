@@ -39,7 +39,7 @@ header{
     background-repeat: no-repeat;
     padding: 0 19px;
     @media screen and (min-width: 1890px){
-    	background-size: 100%;
+    	background-size: 100% 100%;
     	background-repeat: no-repeat;
     }
     .headerTop {
@@ -99,6 +99,9 @@ header{
     		font-size: 22px;
     		
     		li{
+    			a{
+    				color: #323e43;
+    			}
     			padding-left: 100px;
     			@media screen and (max-width: 735px){
     				padding-left: 50px;
@@ -262,6 +265,9 @@ main {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	padding: 20px;
+	@media screen and (min-width: 1890px){
+	    background-size: 100%;
+	}
 	h2{
 		color: #fff;
 		position: relative;
@@ -386,6 +392,9 @@ main {
 	height:334px;
 	width:100%;
 	margin-top:-1px;
+	@media screen and (min-width: 1890px){
+	    background-size: 100%;
+	}
 	}
 	h2 {
 		color: #fff;
@@ -460,11 +469,15 @@ main {
 		background-image: url(../img/part3.png);
 		background-position: bottom;
 		background-repeat: no-repeat;
+		@media screen and (min-width: 1890px){
+		    background-size: 100% 100%;
+		}
 	}
 }
 // part2 END
 .part3{
 	background-color: #fff;
+	padding-bottom: 100px;
 	h4{
 		padding: 40px 10px;
 	}
@@ -493,6 +506,9 @@ main {
 	background-image: url(../img/part4.png);
 	background-repeat: no-repeat;
 	background-position: top;
+	@media screen and (min-width: 1890px){
+	    background-size: 100% 100%;
+	}
 	p{
 		font-size: 25px;
 		color: white;
@@ -581,5 +597,102 @@ main {
 		}
 
 	}
-
+	.go{
+		display: inline-block;
+		width: 300px;
+		margin-left: -145px;
+		background-color: white;
+		position: absolute;
+		z-index: 999;
+		h3{
+			line-height: 2;
+		}
+	}
+}
+// do END
+footer{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	.footerForm{
+		display: flex;
+		flex-basis: 1160px;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-image: url(../img/footerform.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		min-height: 220px;
+		position: absolute;
+		text-align: center;
+		margin-top: -60px;
+		 @media screen and (min-width: 1890px){
+	    	background-size: 100% 100%;
+	    }
+		span{
+			font-size: 32px;
+			position: relative;
+    		top: 20px;
+			text-transform: uppercase;
+			width: 100%;
+			}
+		div{
+			display: flex;
+			justify-content: space-around;
+			width: 90%;
+			@media screen and (max-width: 880px){
+				flex-wrap: wrap;
+				margin-top: 20px;
+			}
+			input{
+			    width: 30%;
+			    padding: 10px 20px;
+			    color: #363636;
+			    font-family: Cuprum;
+			    font-size: 21px;
+			    font-weight: 400;
+			    line-height: 28px;
+			    border: 0;
+			    height: 49px;
+			    margin-bottom: 10px;
+			    @media screen and (max-width: 880px){
+			    	width: 90%;
+			    }
+			}
+			button{
+			    width: 25%;
+			    height: 49px;
+			    background-color: #8b2d06;
+			    color: #fefefd;
+			    font-family: Cuprum;
+			    font-size: 24px;
+			    font-weight: 700;
+			    line-height: 49px;
+			    text-transform: uppercase;
+			    text-align: center;
+			    border: 0;
+			    @media screen and (max-width: 880px){
+			    	width: 90%;
+			    	margin-bottom: 10px;
+			    }
+			}
+		}
+	}
+	.footerbtm{
+		background-image: url(../img/footer.png);
+		background-repeat: no-repeat;
+		background-position:bottom;
+		height: 320px;
+		width: 100%;
+		 @media screen and (min-width: 1890px){
+	    	background-size: 100%;
+	    }
+		p{
+			text-align: center;
+			font-size: 20px;
+			color:#494848;
+			position: relative;
+			top: 250px;
+		}
+	}
 }

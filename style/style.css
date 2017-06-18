@@ -49,7 +49,7 @@ header {
 }
 @media screen and (min-width: 1890px) {
   header {
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
   }
 }
@@ -125,6 +125,9 @@ header .menu ul {
 }
 header .menu ul li {
   padding-left: 100px;
+}
+header .menu ul li a {
+  color: #323e43;
 }
 @media screen and (max-width: 735px) {
   header .menu ul li {
@@ -302,6 +305,11 @@ main {
   background-repeat: no-repeat;
   padding: 20px;
 }
+@media screen and (min-width: 1890px) {
+  .part1 {
+    background-size: 100%;
+  }
+}
 .part1 h2 {
   color: #fff;
   position: relative;
@@ -451,6 +459,11 @@ main {
   width: 100%;
   margin-top: -1px;
 }
+@media screen and (min-width: 1890px) {
+  .part2 .topImg {
+    background-size: 100%;
+  }
+}
 .part2 h2 {
   color: #fff;
   text-transform: uppercase;
@@ -545,9 +558,15 @@ main {
   background-position: bottom;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1890px) {
+  .part2 .btmImg {
+    background-size: 100% 100%;
+  }
+}
 
 .part3 {
   background-color: #fff;
+  padding-bottom: 100px;
 }
 .part3 h4 {
   padding: 40px 10px;
@@ -585,6 +604,11 @@ main {
   background-image: url(../img/part4.png);
   background-repeat: no-repeat;
   background-position: top;
+}
+@media screen and (min-width: 1890px) {
+  .part4 {
+    background-size: 100% 100%;
+  }
 }
 .part4 p {
   font-size: 25px;
@@ -689,6 +713,128 @@ main {
   .do > div > div {
     padding: 10px 20px;
   }
+}
+.do .go {
+  display: inline-block;
+  width: 300px;
+  margin-left: -145px;
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+}
+.do .go h3 {
+  line-height: 2;
+}
+
+footer {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .footerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 1160px;
+      flex-basis: 1160px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/footerform.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 220px;
+  position: absolute;
+  text-align: center;
+  margin-top: -60px;
+}
+@media screen and (min-width: 1890px) {
+  footer .footerForm {
+    background-size: 100% 100%;
+  }
+}
+footer .footerForm span {
+  font-size: 32px;
+  position: relative;
+  top: 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+footer .footerForm div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+@media screen and (max-width: 880px) {
+  footer .footerForm div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+footer .footerForm div input {
+  width: 30%;
+  padding: 10px 20px;
+  color: #363636;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 28px;
+  border: 0;
+  height: 49px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 880px) {
+  footer .footerForm div input {
+    width: 90%;
+  }
+}
+footer .footerForm div button {
+  width: 25%;
+  height: 49px;
+  background-color: #8b2d06;
+  color: #fefefd;
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 49px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+}
+@media screen and (max-width: 880px) {
+  footer .footerForm div button {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+footer .footerbtm {
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 320px;
+  width: 100%;
+}
+@media screen and (min-width: 1890px) {
+  footer .footerbtm {
+    background-size: 100%;
+  }
+}
+footer .footerbtm p {
+  text-align: center;
+  font-size: 20px;
+  color: #494848;
+  position: relative;
+  top: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */
