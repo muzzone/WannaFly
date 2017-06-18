@@ -335,6 +335,13 @@ main {
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 426px) {
+  .part1 .asd {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .part1 div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,6 +381,13 @@ main {
 @media screen and (max-width: 875px) {
   .part1 div .price p {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .part1 div .price p {
+    text-align: start;
+    font-size: 33px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 690px) {
@@ -604,6 +618,7 @@ main {
   background-image: url(../img/part4.png);
   background-repeat: no-repeat;
   background-position: top;
+  padding: 0 10px;
 }
 @media screen and (min-width: 1890px) {
   .part4 {
@@ -717,7 +732,7 @@ main {
 .do .go {
   display: inline-block;
   width: 300px;
-  margin-left: -145px;
+  margin-left: -149px;
   background-color: white;
   position: absolute;
   z-index: 999;

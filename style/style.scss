@@ -286,6 +286,9 @@ main {
 			justify-content: center;
 			margin-bottom: 40px;
 		}
+		@media screen and (max-width: 426px){
+			justify-content: flex-start;
+		}
 	}
 	div {
 		display: flex;
@@ -311,6 +314,11 @@ main {
 				}
 				@media screen and (max-width: 875px){
 					font-size: 20px;
+				}
+				@media screen and (max-width: 426px){
+					text-align: start;
+					font-size: 33px;
+					padding-bottom:20px;
 				}
 			}
 
@@ -413,6 +421,7 @@ main {
 		@media screen and (max-width: 810px){
 			flex-wrap: wrap;
 		}
+
 		> div {
 			display: flex;
 			width: 50%;
@@ -506,6 +515,7 @@ main {
 	background-image: url(../img/part4.png);
 	background-repeat: no-repeat;
 	background-position: top;
+	padding: 0 10px;
 	@media screen and (min-width: 1890px){
 	    background-size: 100% 100%;
 	}
@@ -600,7 +610,7 @@ main {
 	.go{
 		display: inline-block;
 		width: 300px;
-		margin-left: -145px;
+		margin-left: -149px;
 		background-color: white;
 		position: absolute;
 		z-index: 999;
